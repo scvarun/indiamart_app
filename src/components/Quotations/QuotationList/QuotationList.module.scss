@@ -1,0 +1,48 @@
+.quotationContainer {
+    @apply flex;
+    height: 80vh;
+}
+
+.quotationSidebar {
+    @apply flex flex-col;
+    width: 300px;
+}
+
+.quotationSidebarItem {
+    @apply mb-3 bg-green-50 px-3 py-2;
+}
+
+.quotationMessageContainer {
+    @apply flex flex-col flex-1;
+}
+
+.quotationMessages {
+    @apply flex flex-col flex-1 items-start px-3 overflow-y-scroll;
+    min-height: 70vh;
+}
+
+.quotationMessageItem {
+    @apply mb-3 bg-green-50 px-3 py-2;
+    width: auto;
+    max-width: 70%;
+}
+
+.quotationMessageItemReply {
+    @apply self-end;
+}
+
+.quotationMessageBox {
+    @apply flex flex-col items-end px-3;
+    textarea {
+        width: 100%;
+    }
+}
+
+.quotationMessageBoxTextArea {
+    @apply border-black border-2;
+}
+
+.loadMoreBtn {
+    margin: 0 auto;
+}
+

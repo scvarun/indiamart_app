@@ -1,0 +1,33 @@
+.tooltipContainer {
+  position: relative;
+  display: block;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid transparent;
+}
+
+.tooltipContainerActive {
+  border: 1px solid red;
+}
+
+.tooltip {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: auto;
+  min-width: 100px;
+  max-width: 200px;
+  transform: translateY(-100%);
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px;
+  display: block;
+  border-radius: 10px;
+  opacity: 0;
+  transition: all .3s ease;
+  pointer-events: none;
+}
+
+.tooltipActive {
+  opacity: 1;
+}
